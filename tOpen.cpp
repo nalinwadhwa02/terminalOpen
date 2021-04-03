@@ -12,6 +12,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <bits/stdc++.h>
+
 bool SHOW_HIDDEN;
 int kbhit(void)
 {
@@ -73,9 +74,11 @@ bool comparer(std::string s1, std::string s2){
 	if(s1<s2) return true;
 	else return false;
 }
-int main (){
-	SHOW_HIDDEN = true;
-	std::string dirv="/home/nalinwadhwa";
+int main (int argc, char * argv[]){
+	SHOW_HIDDEN = true;	
+	char  buffer[1000];
+	getcwd(buffer,sizeof(buffer));
+	std::string dirv(buffer);
 	int flag=0;
 	int selection=0;
 	std::string selected;
