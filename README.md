@@ -9,11 +9,11 @@ A simple terminal file manager mainly focused for users who dont want their file
 ## Useage
 This program cann be compiled by simply running 
 
-    make
+		make
 
 which will generate an executable named tOpen which can be launched by
 
-        ./tOpen
+		./tOpen
         
 You can link this to your PATH or keybind it directly or use it in your own preference.
 
