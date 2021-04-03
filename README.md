@@ -6,7 +6,8 @@ A simple terminal file manager mainly focused for users who dont want their file
 - some patience
 
 ## Useage
-When launched from a terminal, this opens the file manager in currently in the working directoy of the terminal
+When launched from a terminal, this opens the file manager in currently in the working directoy of the terminal.
+
 The program currently has the following functionalities
 - Moving across files with 'hjkl' ( vim style because this is meant to be efficient) (Will add support for arrow keys some day)
 - Opening the terminal in the current file with 'o'
