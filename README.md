@@ -3,9 +3,17 @@ A simple terminal file manager mainly focused for users who dont want their file
 
 ## Dependencies
 - clang-g++
+- make
 - some patience
 
 ## Useage
+This program cann be compiled by simply running 
+
+  make
+
+which will generate an executable named tOpen. You can link this to your PATH or keybind it directly or use it in your own preference.
+
+
 When launched from a terminal, this opens the file manager in currently in the working directoy of the terminal.
 
 The program currently has the following functionalities
