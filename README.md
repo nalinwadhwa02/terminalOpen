@@ -1,5 +1,8 @@
 # terminalOpen
-A simple terminal file manager mainly focused for users who dont want their file manager to intrude into their daily terminal life. Meant to be keybinded as your usual file manager just to quickly move files and open terminal at a path 
+A simple terminal file manager mainly focused for users who dont want their file manager to intrude into their daily terminal life. Meant to be keybinded as your usual file manager just to quickly move files and open terminal at a path.
+
+## currently undergoing major changes and improvements
+Ive decided to wake up and suddenly continue on this random project after a while. The testing folder now contains my newer versions, it is not complete and cant be used yet but in plan to make an alpha version shortly.
 
 ## Dependencies
 - clang-g++
