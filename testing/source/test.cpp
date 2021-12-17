@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include "../include/fileClass.hpp"
 int main(int argc, char * argv[]){
 //on start
 //	>get directory
