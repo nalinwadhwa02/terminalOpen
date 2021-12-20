@@ -1,4 +1,4 @@
-#include <../include/fsysm.hpp>
+#include "../include/fsysm.hpp"
 #include <string>
 #include <vector>
 
@@ -18,7 +18,7 @@ fsysm::fsysm(std::string s){
 	show_fullpath = false;
 }
 std::vector<std::string> fsysm::get_list(){
-	vector<std::string> res;
+	std::vector<std::string> res;
 	for(auto file: fs::directory_iterator(cwd)){
 		if(!check_if_hidden(file) || show_hidden){
 			if(show_fullpath){
@@ -33,5 +33,16 @@ std::vector<std::string> fsysm::get_list(){
 }
 
 
-void validate_selection(std::string){
+int fsysm::validate_selection(std::string s){
+	fs::directory_entry sel(fs::path(cwd.path().string() + "/" + s));
+	if(!sel.exists()){
+		return -1;
+	}
+	if(!sel.is_directory()){
+		return 0;
+	}
+	else{
+		cwd = sel;
+		return 1;
+	}
 }
